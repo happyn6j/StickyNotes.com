@@ -1,0 +1,55 @@
+
+.btn_add{
+    border-radius: 5px;
+    background: #d3bc73;
+    border: 1px solid  #d3bc73;
+    color: yellow;
+    font-size: 18px;
+}
+.note{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    background: yellow;
+    border: 1px solid #d3bc73;
+    box-shadow:    0px -1px 0px 0px #d1d3c8,   /*上边阴影  红色*/
+    -1px 0px 0px 0px #d1d3c8,   /*左边阴影  绿色*/
+    1px 0px 0px 0px #d1d3c8,    /*右边阴影  蓝色*/
+    0px 1px 0px 0px #d1d3c8;    /*下边阴影  黄色*/
+}
+.note .btn_delete{
+    position: absolute;
+    right: -10px;
+    top:-10px;
+    border-radius: 40px;
+    background: #d3bc73;
+    border: 1px solid  #d3bc73;
+    color: yellow;
+    font-size: 18px;
+    display: none;
+}
+.note:hover .btn_delete{
+    display: block;
+}
+.note .editor{
+    position: absolute;
+    top:10px;
+    left:10px;
+    right:10px;
+    bottom: 30px;
+    color: #000;
+    border: none;
+    outline:none;
+    overflow:auto;/*如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。*/
+}
+.note .time{
+    width: 250px;
+    height: 30px;
+    position: absolute;
+    bottom: 0px;
+    background: #d3bc73;
+    line-height: 30px;
+    text-align: center;
+    color: yellow;
+}
+
